@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Auschwitz-Birkenau – Projets de Quentin Jofroix</title>
+  <meta name="description" content="Site web dynamique relié à une base de données, consacré au lieu de mémoire d’Auschwitz-Birkenau.">
+  <meta name="author" content="Quentin Jofroix">
+  <meta property="og:title" content="Auschwitz-Birkenau – Projets de Quentin Jofroix">
+  <meta property="og:description" content="Site web dynamique relié à une base de données, consacré au lieu de mémoire d’Auschwitz-Birkenau.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#23244b">
+  <link rel="preload" href="../assets/fonts/climate-crisis-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="site-header__center">
+        <a class="logo" href="../index.html" aria-label="Accueil – Quentin Jofroix">QJ</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span class="nav-toggle__bars"></span></button>
+        <nav class="nav" id="menu" aria-label="Menu principal">
+          <ul class="nav__list"><li><a class="nav__link" href="../index.html">Accueil</a></li><li><a class="nav__link" href="../me-connaitre.html">Me connaître</a></li><li><a class="nav__link" href="../projets.html" aria-current="page">Mes projets</a></li><li><a class="nav__link" href="../contact.html">Me contacter</a></li></ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <section class="section section--light project-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Fil d’Ariane"><ol><li><a href="../index.html">Accueil</a></li><li><a href="../projets.html">Mes projets</a></li><li><span aria-current="page">Auschwitz-Birkenau</span></li></ol></nav>
+        <div class="project-head">
+          <h1 class="title h1">Auschwitz-Birkenau</h1>
+          <p class="subtitle">Site web dynamique relié à une base de données, consacré au lieu de mémoire d’Auschwitz-Birkenau.</p>
+          <ul class="tag-list" aria-label="Domaines"><li class="tag tag--web">Web</li></ul>
+        </div>
+        <dl class="facts" data-reveal>
+          <div><dt>Période</dt><dd>Mars 2026</dd></div>
+          <div><dt>Contexte</dt><dd>SAÉ 203 · BUT MMI 1re année</dd></div>
+          <div><dt>Équipe</dt><dd>Projet individuel</dd></div>
+        </dl>
+        <div data-reveal><div class="media media--img " style="--media-bg:#f2f2f2"><img src="../assets/img/auschwitz-birkenau-couverture.webp" alt="Page d’accueil du site sur Auschwitz-Birkenau" width="1600" height="921" style="object-fit:contain"></div></div>
+      </div>
+    </section>
+
+    <section class="section section--dark section--project" aria-labelledby="le-projet">
+      <div class="container">
+        <h2 id="le-projet" class="title h2">Le projet</h2>
+        <div class="presentation">
+          <div class="text-flow" data-reveal><p>Cette SAÉ demandait de concevoir seul un site web relié à une base de données, pour mettre en avant un lieu réel ou fictif. J’ai choisi de présenter le mémorial d’Auschwitz-Birkenau.</p><p>Le site présente les lieux du mémorial, des témoignages, et permet de réserver une visite. Toutes les données sont stockées dans une base de données : on peut les afficher, en ajouter, les modifier ou les supprimer, en partie depuis un espace d’administration. Trois interactions en JavaScript complètent l’expérience.</p></div>
+          <aside class="highlight" data-reveal style="--delay:.15s">
+            <h3 class="h4">Contraintes</h3>
+            <p class="subtitle">Au moins trois entités et deux associations, et des pages capables de lire, créer, modifier et supprimer des données.</p>
+          </aside>
+        </div>
+        <ol class="steps" data-stagger><li><span class="step__num">01</span><h3 class="h4">Wireframe augmenté</h3><p class="caption">Pages, scripts, requêtes et données échangées</p></li><li><span class="step__num">02</span><h3 class="h4">Modélisation</h3><p class="caption">Modèle entité-association et schéma relationnel</p></li><li><span class="step__num">03</span><h3 class="h4">Développement</h3><p class="caption">HTML, CSS, JavaScript, PHP et SQL</p></li><li><span class="step__num">04</span><h3 class="h4">Mise en ligne</h3><p class="caption">Hébergement et versionnage du code</p></li></ol>
+      </div>
+    </section>
+
+    <section class="section section--light section--project" aria-labelledby="contribution">
+      <div class="container">
+        <h2 id="contribution" class="title h2">Ma démarche</h2>
+        <div class="contribution">
+          <div class="contribution__main" data-reveal>
+            <p>J’ai réalisé ce projet seul, en suivant un ordre logique des données jusqu’à leur affichage, et en testant régulièrement chaque partie dynamique :</p>
+            <ul class="bullets"><li><strong>Conception : </strong>wireframe augmenté décrivant les pages, les interactions et les données utilisées.</li><li><strong>Base de données : </strong>modèle entité-association, schéma relationnel puis création de la base (lieux, témoignages, réservations).</li><li><strong>Développement : </strong>pages dynamiques en PHP, requêtes SQL et formulaires pour ajouter, modifier ou supprimer des données.</li><li><strong>Interactions : </strong>trois interactions en JavaScript, sans bibliothèque, en manipulant directement le DOM.</li></ul>
+          </div>
+          <aside class="toolbox" data-reveal style="--delay:.15s">
+            <div><h3 class="h4">Outils</h3><ul class="bullets"><li><strong>HTML, CSS et JavaScript : </strong>pages et interactions</li><li><strong>PHP et SQL : </strong>pages dynamiques et base de données</li><li><strong>Git : </strong>versionnage du code</li></ul></div>
+            <div><h3 class="h4">Méthodes</h3><ul class="bullets"><li>Wireframe augmenté</li><li>Modèle entité-association</li><li>Schéma relationnel</li><li>Tests réguliers</li></ul></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--pink section--project" aria-labelledby="realisations">
+      <div class="container">
+        <h2 id="realisations" class="title h2">Les réalisations</h2>
+        <ul class="gallery" data-stagger><li class="gallery__item"><div class="media media--img " style="--media-bg:#ffffff"><img src="../assets/img/auschwitz-birkenau-site-web.webp" alt="Carte d’un témoignage sur le site, avec le bouton Voir moins" width="1000" height="385" loading="lazy" decoding="async" style="object-fit:contain"></div><h3 class="h4">Site web</h3><p class="caption">Les lieux, les témoignages et la réservation.</p></li><li class="gallery__item"><div class="media media--img " style="--media-bg:#f2f2f2"><img src="../assets/img/auschwitz-birkenau-administration.webp" alt="Tableau d’administration des témoignages avec les boutons Supprimer" width="1000" height="681" loading="lazy" decoding="async" style="object-fit:contain"></div><h3 class="h4">Espace d’administration</h3><p class="caption">Les formulaires pour gérer le contenu.</p></li><li class="gallery__item"><div class="media media--img " style="--media-bg:#ffffff"><img src="../assets/img/auschwitz-birkenau-modelisation.webp" alt="Wireframe augmenté du site Auschwitz-Birkenau" width="1600" height="1106" loading="lazy" decoding="async" style="object-fit:contain"></div><h3 class="h4">Modélisation</h3><p class="caption">Le wireframe augmenté et le schéma relationnel.</p></li></ul>
+      </div>
+    </section>
+
+    <nav class="section section--pink project-nav" aria-label="Navigation entre les projets">
+      <div class="container">
+        <div class="project-nav__row">
+          <a class="btn btn--light" href="article-strada.html" rel="prev"><span class="arrow arrow--left" aria-hidden="true">←</span> Article Strada</a>
+          <a class="project-nav__all" href="../projets.html">Tous les projets</a>
+          <a class="btn btn--dark" href="tutoriel-mojito.html" rel="next">Tutoriel Mojito <span class="arrow arrow--right" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__copy">© 2026 Quentin Jofroix. Tous droits réservés.</p>
+      <a class="logo" href="../index.html" aria-label="Retour à l’accueil">QJ</a>
+      <ul class="site-footer__links">
+        <li><a href="../confidentialite.html">Politique de confidentialité</a></li>
+        <li><a href="../mentions-legales.html">Mentions légales</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

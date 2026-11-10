@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Le trampoline – Projets de Quentin Jofroix</title>
+  <meta name="description" content="Mon premier site web : cinq pages sur le trampoline, codées en HTML et CSS, avec un formulaire traité en PHP.">
+  <meta name="author" content="Quentin Jofroix">
+  <meta property="og:title" content="Le trampoline – Projets de Quentin Jofroix">
+  <meta property="og:description" content="Mon premier site web : cinq pages sur le trampoline, codées en HTML et CSS, avec un formulaire traité en PHP.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#23244b">
+  <link rel="preload" href="../assets/fonts/climate-crisis-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="site-header__center">
+        <a class="logo" href="../index.html" aria-label="Accueil – Quentin Jofroix">QJ</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span class="nav-toggle__bars"></span></button>
+        <nav class="nav" id="menu" aria-label="Menu principal">
+          <ul class="nav__list"><li><a class="nav__link" href="../index.html">Accueil</a></li><li><a class="nav__link" href="../me-connaitre.html">Me connaître</a></li><li><a class="nav__link" href="../projets.html" aria-current="page">Mes projets</a></li><li><a class="nav__link" href="../contact.html">Me contacter</a></li></ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <section class="section section--light project-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Fil d’Ariane"><ol><li><a href="../index.html">Accueil</a></li><li><a href="../projets.html">Mes projets</a></li><li><span aria-current="page">Le trampoline</span></li></ol></nav>
+        <div class="project-head">
+          <h1 class="title h1">Le trampoline</h1>
+          <p class="subtitle">Mon premier site web : cinq pages sur le trampoline, codées en HTML et CSS, avec un formulaire traité en PHP.</p>
+          <ul class="tag-list" aria-label="Domaines"><li class="tag tag--web">Web</li></ul>
+        </div>
+        <dl class="facts" data-reveal>
+          <div><dt>Période</dt><dd>Novembre 2025</dd></div>
+          <div><dt>Contexte</dt><dd>SAÉ 105 · BUT MMI 1re année</dd></div>
+          <div><dt>Équipe</dt><dd>Projet individuel</dd></div>
+        </dl>
+        <div data-reveal><div class="media media--img " style="--media-bg:#ffffff"><img src="../assets/img/le-trampoline-couverture.webp" alt="Page « Aux Jeux olympiques » du site sur le trampoline" width="1600" height="920" style="object-fit:contain"></div></div>
+      </div>
+    </section>
+
+    <section class="section section--dark section--project" aria-labelledby="le-projet">
+      <div class="container">
+        <h2 id="le-projet" class="title h2">Le projet</h2>
+        <div class="presentation">
+          <div class="text-flow" data-reveal><p>Pour cette première SAÉ orientée web, chaque étudiant devait concevoir seul, en deux semaines, un site mettant en avant une activité sportive ou culturelle : au moins quatre pages HTML, une seule feuille de style, et un formulaire dont les données sont traitées en PHP.</p><p>J’ai choisi le trampoline, un sport souvent vu comme un simple loisir, pour présenter ses origines, ses figures, sa place aux Jeux olympiques et sa pratique au quotidien.</p></div>
+          <aside class="highlight" data-reveal style="--delay:.15s">
+            <h3 class="h4">Contraintes</h3>
+            <p class="subtitle">Quatre pages HTML minimum, un seul fichier CSS et un formulaire traité en PHP, le tout en deux semaines.</p>
+          </aside>
+        </div>
+        <ol class="steps" data-stagger><li><span class="step__num">01</span><h3 class="h4">Veille</h3><p class="caption">Contenus variés et inspirations graphiques</p></li><li><span class="step__num">02</span><h3 class="h4">Conception</h3><p class="caption">Planche de style et wireframe</p></li><li><span class="step__num">03</span><h3 class="h4">Développement</h3><p class="caption">HTML, CSS et formulaire PHP</p></li><li><span class="step__num">04</span><h3 class="h4">Validation</h3><p class="caption">Vérification avec le validateur du W3C</p></li></ol>
+      </div>
+    </section>
+
+    <section class="section section--light section--project" aria-labelledby="contribution">
+      <div class="container">
+        <h2 id="contribution" class="title h2">Ma démarche</h2>
+        <div class="contribution">
+          <div class="contribution__main" data-reveal>
+            <p>J’ai réalisé ce projet seul, en cherchant d’abord les réponses par moi-même dans les cours, les tutoriels et la documentation. C’est ce projet qui m’a donné les bases du développement web :</p>
+            <ul class="bullets"><li><strong>Conception : </strong>veille, planche de style et wireframe pour organiser les pages.</li><li><strong>Développement : </strong>structure HTML5 sémantique, mise en page en Flexbox et un seul fichier CSS.</li><li><strong>Données : </strong>formulaire relié à un script PHP qui récupère et affiche les informations saisies.</li><li><strong>Qualité : </strong>validation des pages avec le validateur du W3C et versionnage avec Git.</li></ul>
+          </div>
+          <aside class="toolbox" data-reveal style="--delay:.15s">
+            <div><h3 class="h4">Outils</h3><ul class="bullets"><li><strong>HTML et CSS : </strong>structure et mise en page</li><li><strong>PHP : </strong>traitement du formulaire</li><li><strong>Git : </strong>versionnage</li><li><strong>Validateur W3C : </strong>conformité du code</li></ul></div>
+            <div><h3 class="h4">Méthodes</h3><ul class="bullets"><li>Veille</li><li>Planche de style</li><li>Wireframe</li><li>Bonnes pratiques de code</li></ul></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <nav class="section section--light project-nav" aria-label="Navigation entre les projets">
+      <div class="container">
+        <div class="project-nav__row">
+          <a class="btn btn--light" href="netflix-x-spotify.html" rel="prev"><span class="arrow arrow--left" aria-hidden="true">←</span> Netflix x Spotify</a>
+          <a class="project-nav__all" href="../projets.html">Tous les projets</a>
+          <a class="btn btn--dark" href="mon-portfolio.html" rel="next">Mon portfolio <span class="arrow arrow--right" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__copy">© 2026 Quentin Jofroix. Tous droits réservés.</p>
+      <a class="logo" href="../index.html" aria-label="Retour à l’accueil">QJ</a>
+      <ul class="site-footer__links">
+        <li><a href="../confidentialite.html">Politique de confidentialité</a></li>
+        <li><a href="../mentions-legales.html">Mentions légales</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

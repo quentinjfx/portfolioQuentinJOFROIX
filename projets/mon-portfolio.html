@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mon portfolio – Projets de Quentin Jofroix</title>
+  <meta name="description" content="Conception de mon portfolio, du wireframe dessiné à la main jusqu’à la maquette animée sur Figma.">
+  <meta name="author" content="Quentin Jofroix">
+  <meta property="og:title" content="Mon portfolio – Projets de Quentin Jofroix">
+  <meta property="og:description" content="Conception de mon portfolio, du wireframe dessiné à la main jusqu’à la maquette animée sur Figma.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#23244b">
+  <link rel="preload" href="../assets/fonts/climate-crisis-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="site-header__center">
+        <a class="logo" href="../index.html" aria-label="Accueil – Quentin Jofroix">QJ</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><span class="nav-toggle__bars"></span></button>
+        <nav class="nav" id="menu" aria-label="Menu principal">
+          <ul class="nav__list"><li><a class="nav__link" href="../index.html">Accueil</a></li><li><a class="nav__link" href="../me-connaitre.html">Me connaître</a></li><li><a class="nav__link" href="../projets.html" aria-current="page">Mes projets</a></li><li><a class="nav__link" href="../contact.html">Me contacter</a></li></ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <section class="section section--light project-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Fil d’Ariane"><ol><li><a href="../index.html">Accueil</a></li><li><a href="../projets.html">Mes projets</a></li><li><span aria-current="page">Mon portfolio</span></li></ol></nav>
+        <div class="project-head">
+          <h1 class="title h1">Mon portfolio</h1>
+          <p class="subtitle">Conception de mon portfolio, du wireframe dessiné à la main jusqu’à la maquette animée sur Figma.</p>
+          <ul class="tag-list" aria-label="Domaines"><li class="tag tag--uxui">UX/UI design</li></ul>
+        </div>
+        <dl class="facts" data-reveal>
+          <div><dt>Période</dt><dd>Octobre - Novembre 2026</dd></div>
+          <div><dt>Contexte</dt><dd>Projet personnel</dd></div>
+          <div><dt>Équipe</dt><dd>Projet individuel</dd></div>
+        </dl>
+        
+      </div>
+    </section>
+
+    <section class="section section--dark section--project" aria-labelledby="le-projet">
+      <div class="container">
+        <h2 id="le-projet" class="title h2">Le projet</h2>
+        <div class="presentation">
+          <div class="text-flow" data-reveal><p>Pour ma recherche de stage puis d’alternance, j’avais besoin d’un portfolio qui me ressemble et qui présente clairement mon parcours. Plutôt que de partir d’un modèle, j’ai conçu chaque page moi-même : l’accueil, la présentation de mon parcours, mes projets et la prise de contact.</p><p>Le site s’adresse à un public précis : des recruteurs qui ont peu de temps. Chaque page doit donc aller à l’essentiel, mettre en avant mes projets et donner envie de me contacter.</p></div>
+          <aside class="highlight" data-reveal style="--delay:.15s">
+            <h3 class="h4">Objectif</h3>
+            <p class="subtitle">Permettre à un recruteur de comprendre mon profil en quelques minutes et de me contacter en un clic.</p>
+          </aside>
+        </div>
+        <ol class="steps" data-stagger><li><span class="step__num">01</span><h3 class="h4">Réflexion</h3><p class="caption">Contenus, couleurs, typographies, arborescence</p></li><li><span class="step__num">02</span><h3 class="h4">Wireframes</h3><p class="caption">Wireframes dessinés à la main pour chaque page</p></li><li><span class="step__num">03</span><h3 class="h4">Maquettes</h3><p class="caption">Composants, pages finales, prototype et animations</p></li><li><span class="step__num">04</span><h3 class="h4">Développement</h3><p class="caption">Codage par IA et vérification humaine</p></li></ol>
+      </div>
+    </section>
+
+    <section class="section section--light section--project" aria-labelledby="contribution">
+      <div class="container">
+        <h2 id="contribution" class="title h2">Ma démarche</h2>
+        <div class="contribution">
+          <div class="contribution__main" data-reveal>
+            <p>J’ai mené ce projet seul, de la réflexion sur les contenus jusqu’aux maquettes animées :</p>
+            <ul class="bullets"><li><strong>Contenus : </strong>rédaction des textes de présentation, de mes centres d’intérêt et de chaque projet.</li><li><strong>Wireframes : </strong>zoning de chaque page sur papier avant de passer sur Figma.</li><li><strong>Design system : </strong>palette de couleurs, styles de texte (Climate Crisis et Outfit) et composants réutilisables : boutons, cartes, labels, header et footer.</li><li><strong>Maquettes : </strong>pages pensées pour être développées, grâce à mes bases en code.</li></ul>
+          </div>
+          <aside class="toolbox" data-reveal style="--delay:.15s">
+            <div><h3 class="h4">Outils</h3><ul class="bullets"><li><strong>Figma : </strong>maquettes, composants et prototype</li><li><strong>Google Fonts : </strong>Climate Crisis et Outfit</li><li><strong>Claude : </strong>codage et automatisation d’interactions utilisateurs</li></ul></div>
+            <div><h3 class="h4">Méthodes</h3><ul class="bullets"><li>Wireframes papier</li><li>Design system</li><li>Composants et variantes</li><li>Hiérarchie visuelle</li></ul></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--pink section--project" aria-labelledby="realisations">
+      <div class="container">
+        <h2 id="realisations" class="title h2">Les réalisations</h2>
+        <ul class="gallery" data-stagger><li class="gallery__item"><div class="media media--img " style="--media-bg:#bdb6aa"><img src="../assets/img/mon-portfolio-wireframes.webp" alt="Wireframe papier de la page d’accueil dessiné à la main" width="1000" height="851" loading="lazy" decoding="async" style="object-fit:contain"></div><h3 class="h4">Wireframes papier</h3><p class="caption">Les premières ébauches faites à la main.</p></li><li class="gallery__item"><div class="media media--img " style="--media-bg:#1e1e1e"><img src="../assets/img/mon-portfolio-design-system.webp" alt="Palette de couleurs du design system : primaire, secondaire et tertiaire" width="1000" height="699" loading="lazy" decoding="async" style="object-fit:contain"></div><h3 class="h4">Design system</h3><p class="caption">Couleurs, typographies et composants.</p></li><li class="gallery__item"><div class="media media--img " style="--media-bg:#1d1d1d"><img src="../assets/img/mon-portfolio-maquettes.webp" alt="Maquettes Figma du portfolio reliées par le prototype" width="1200" height="850" loading="lazy" decoding="async" style="object-fit:contain"></div><h3 class="h4">Maquettes animées</h3><p class="caption">Les pages finales et leurs interactions.</p></li></ul>
+      </div>
+    </section>
+
+    <nav class="section section--pink project-nav" aria-label="Navigation entre les projets">
+      <div class="container">
+        <div class="project-nav__row">
+          <a class="btn btn--light" href="le-trampoline.html" rel="prev"><span class="arrow arrow--left" aria-hidden="true">←</span> Le trampoline</a>
+          <a class="project-nav__all" href="../projets.html">Tous les projets</a>
+          <a class="btn btn--dark" href="campagne-rse.html" rel="next">Campagne RSE <span class="arrow arrow--right" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__copy">© 2026 Quentin Jofroix. Tous droits réservés.</p>
+      <a class="logo" href="../index.html" aria-label="Retour à l’accueil">QJ</a>
+      <ul class="site-footer__links">
+        <li><a href="../confidentialite.html">Politique de confidentialité</a></li>
+        <li><a href="../mentions-legales.html">Mentions légales</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
